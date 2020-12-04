@@ -1,6 +1,10 @@
 # Portfollio Website
 
 ## Language
+* Java
 
-## Frameword
+## Framework
+* Spring boot
+
+
 
