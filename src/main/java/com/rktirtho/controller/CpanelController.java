@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("cpanel")
 public class CpanelController {
 	
-	@RequestMapping("")
+	@RequestMapping("dge")
 	public String dashboard() {
 		return "cpanel-login";
 	}
