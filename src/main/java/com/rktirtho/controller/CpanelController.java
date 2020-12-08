@@ -1,4 +1,4 @@
-package com.rktirtho.api;
+package com.rktirtho.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("cpanel")
 public class CpanelController {
-	
-	@RequestMapping("dge")
-	public String dashboard() {
-		return "cpanel-login";
-	}
 	
 	@RequestMapping("login")
 	public String login() {
