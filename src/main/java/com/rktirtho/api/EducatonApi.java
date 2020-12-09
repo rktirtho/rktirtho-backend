@@ -24,9 +24,9 @@ public class EducatonApi {
 		return repo.findAll();
 	}
 	
-	@PostMapping("education/add")
+	@GetMapping("education")
 	public void save() {
-		Education education = new Education("SSC", "Dhaka Board", "Business Studies", 4.75f, 5.00f,
+		Education education = new Education(1,"SSC", "Dhaka Board", "Business Studies", 4.75f, 5.00f,
 				"A", 2f, 2012);
 		repo.save(education);
 		
