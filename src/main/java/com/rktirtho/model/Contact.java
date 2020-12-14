@@ -31,6 +31,18 @@ public class Contact {
 	
 	@Column(name = "time")
 	private Timestamp time;
+	
+	public Contact() {
+		super();
+	}
+	public Contact(String name, String email, String massage, boolean reply, Timestamp time) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.massage = massage;
+		this.reply = reply;
+		this.time = time;
+	}
 	public long getId() {
 		return id;
 	}
