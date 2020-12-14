@@ -2,16 +2,27 @@ package com.rktirtho.model;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * 
  * @author rktirtho
  *
  */
+@Table(name = "training")
+@Entity
 public class Training {
 	// training id
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
 	// name of course conductor
+
 	private String vendor;
 	
 	// training orgeniger
@@ -21,7 +32,7 @@ public class Training {
 	private List<String> topicCovered;
 	
 	
-	// duration of the course
+	// duration of the course in hour
 	private float duration;
 	
 	// id this course organized in online?
