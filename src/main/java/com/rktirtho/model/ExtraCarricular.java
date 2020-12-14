@@ -1,30 +1,40 @@
 package com.rktirtho.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name = "extra_carricular")
+@Entity
 public class ExtraCarricular {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String title;
 	private String organizations;
-	private String date;
+	private String startDate;
+	private String endDate;
 	
 	
 	public ExtraCarricular() {
 		super();
 	}
 	
-	public ExtraCarricular(String title, String organizations, String date) {
+	
+	
+	public ExtraCarricular(String title, String organizations, String startDate, String endDate) {
 		super();
 		this.title = title;
 		this.organizations = organizations;
-		this.date = date;
+		this.startDate = startDate;
+		this.endDate = endDate;
 	}
 
-	public ExtraCarricular(long id, String title, String organizations, String date) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.organizations = organizations;
-		this.date = date;
-	}
+
+
 	public long getId() {
 		return id;
 	}
@@ -43,11 +53,21 @@ public class ExtraCarricular {
 	public void setOrganizations(String organizations) {
 		this.organizations = organizations;
 	}
-	public String getDate() {
-		return date;
+
+	public String getStartDate() {
+		return startDate;
 	}
-	public void setDate(String date) {
-		this.date = date;
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+
+	public String getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
 	}
 	
 	
