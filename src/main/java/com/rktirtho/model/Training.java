@@ -38,6 +38,8 @@ public class Training {
 	// id this course organized in online?
 	private boolean isOnline;
 	
+	private String certificateLink;
+	
 	// training complication date
 	private String date;
 	
@@ -118,6 +120,16 @@ public class Training {
 	public void setDuration(float duration) {
 		this.duration = duration;
 	}
+
+	public String getCertificateLink() {
+		return certificateLink;
+	}
+
+	public void setCertificateLink(String certificateLink) {
+		this.certificateLink = certificateLink;
+	}
+
+
 
 	public boolean isOnline() {
 		return isOnline;
